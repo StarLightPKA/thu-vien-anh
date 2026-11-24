@@ -1,0 +1,17 @@
+const viewer = document.getElementById('image');
+const thumbs = document.querySelectorAll('.thumb');
+
+function show(thumb) {
+  const img = thumb.querySelector('img');
+  viewer.innerHTML = '';
+  const big = document.createElement('img');
+  big.src = img.src.replace('w=600', 'w=1200');
+  big.alt = img.alt;
+  viewer.appendChild(big);
+}
+
+thumbs.forEach(t => {
+  t.addEventListener('mouseenter', () => show(t));
+  t.addEventListener('focus', () => show(t));
+  t.addEventListener('click', () => show(t));
+});

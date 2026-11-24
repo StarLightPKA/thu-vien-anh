@@ -1,0 +1,5 @@
+.skip-link { position: absolute; left: -999px; }
+.skip-link:focus { left: 8px; top: 8px; background: #000; color: #fff; padding: 8px; z-index: 10; }
+.thumb { border: 0; padding: 0; background: none; cursor: pointer; }
+.thumb img { width: 100%; height: auto; display: block; }
+.thumb:focus-visible { outline: 3px solid #005fcc; outline-offset: 3px; }

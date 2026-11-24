@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Thư viện ảnh tương tác có thể truy cập</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Bỏ qua đến nội dung chính</a>
+
+  <header>
+    <h1>Thư viện ảnh tương tác có thể truy cập</h1>
+    <p id="instruction">Di chuột, nhấp chuột hoặc dùng phím Tab rồi nhấn Enter để xem ảnh chi tiết.</p>
+  </header>
+
+  <main id="main">
+    <section aria-labelledby="viewer-title">
+      <h2 id="viewer-title">Ảnh đang xem</h2>
+      <div id="image" role="region" aria-live="polite" aria-label="Khung xem ảnh lớn">
+        Chưa có ảnh nào được chọn. Hãy chọn một hình bên dưới.
+      </div>
+    </section>
+
+    <section aria-labelledby="gallery-title">
+      <h2 id="gallery-title">Danh sách hình ảnh</h2>
+      <div class="gallery">
+        <button type="button" class="thumb">
+          <img class="preview" loading="lazy" width="600" height="400"
+            src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=600"
+            alt="Thung lũng Yosemite với núi đá, rừng thông và dòng sông phản chiếu ánh sáng" />
+        </button>
+        <button type="button" class="thumb">
+          <img class="preview" loading="lazy" width="600" height="400"
+            src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=600"
+            alt="Bãi biển cát trắng với sóng xanh nhẹ nhàng dưới bầu trời nắng" />
+        </button>
+        <button type="button" class="thumb">
+          <img class="preview" loading="lazy" width="600" height="400"
+            src="https://images.unsplash.com/photo-1518791841217-8f162f1e1131?w=600"
+            alt="Chú mèo mướp nằm thư giãn nhìn thẳng về phía ống kính" />
+        </button>
+        <button type="button" class="thumb">
+          <img class="preview" loading="lazy" width="600" height="400"
+            src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=600"
+            alt="Ly cà phê nóng đặt trên bàn gỗ cùng ánh sáng ấm áp buổi sáng" />
+        </button>
+        <button type="button" class="thumb">
+          <img class="preview" loading="lazy" width="600" height="400"
+            src="https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?w=600"
+            alt="Sương mù phủ nhẹ trên sườn đồi xanh mát lúc bình minh" />
+        </button>
+        <button type="button" class="thumb">
+          <img class="preview" loading="lazy" width="600" height="400"
+            src="https://images.unsplash.com/photo-1519681393784-d120267933ba?w=600"
+            alt="Dãy núi phủ tuyết dưới bầu trời đêm đầy sao" />
+        </button>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Dự án cuối khóa — Thiết kế web có thể truy cập (Accessibility)</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
